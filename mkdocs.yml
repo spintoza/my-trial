@@ -1,0 +1,80 @@
+site_name: Carnets
+site_author: Zé de Lagos
+site_description: >-
+
+nav:
+  - Home: 'index.md'
+  - 'Carnets du Quotidien':
+      - 'Carnet Un': 'carnet-un.md'
+      - 'Carnet Deux': 'carnet-deux.md'
+      - 'Carnet Trois': 'carnet-trois.md'
+
+  - Musique:
+       - Admonition: extensions/admonition.md
+       - CodeHilite: extensions/codehilite.md
+       - Footnotes: extensions/footnotes.md
+       - Metadata: extensions/metadata.md
+       - Permalinks: extensions/permalinks.md
+       - PyMdown: extensions/pymdown.md
+  - Lectures:
+       - Search: plugins/search.md
+       - Minification: plugins/minification.md
+       - Revision date: plugins/revision-date.md
+       - Awesome pages: plugins/awesome-pages.md
+  - About: about.md
+  - License: license.md
+    
+
+theme:
+name: null
+custom_dir: material
+
+    
+static_templates:
+  - 404.html
+
+language: en
+features:
+  - tabs
+  #- instant
+  
+palette:
+  scheme: default
+  primary: indigo
+  accent: indigo
+  
+font:
+text: Roboto
+code: Roboto mono
+
+plugins:
+  - search
+  
+
+
+
+markdown_extensions:
+        - toc:
+        - smarty
+        - admonition
+        - footnotes
+        - codehilite
+        - pymdownx.arithmatex
+        - pymdownx.betterem:
+            smart_enable: all
+        - pymdownx.caret
+        - pymdownx.critic
+        - pymdownx.details
+        - pymdownx.emoji:
+            emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        - pymdownx.inlinehilite
+        - pymdownx.magiclink
+        - pymdownx.mark
+        - pymdownx.smartsymbols
+        - pymdownx.superfences
+        - pymdownx.tasklist:
+            custom_checkbox: true
+        - pymdownx.tilde
+        
+    
+    
